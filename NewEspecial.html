@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>ESPECIALIDADES</title>
+
+       <script type="text/javascript" src="js/gourmetmallorca.js"></script>
+       <link rel="stylesheet" href="NewEspecial.css">
+       <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+</head>
+
+<body>
+
+	<header id="main-header">
+
+		<a id="logo-header" href="#">
+			<span class="site-name">Gourmet Mallorca</span>
+			<span class="site-desc">...Sabe Más!!!</span>
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="/NewEspecial.html">Especialidades</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav><!-- / nav -->
+
+		  <!-- Menú de platos -->
+
+		<div id="nav2">
+			<nav>
+					<h3>
+						<a href="#" onclick="mostrar()"><span>Entrantes / Tapas</span></a>
+						<a href="#" onclick="mostrar()"><span>Platos Principales</span></a>
+						<a href="#" onclick="mostrar()"><span>Postres</span></a>
+
+					</h3>
+
+			</nav>
+		</div>
+
+
+	</header><!-- / #main-header -->
+
+	<!-- Imagen de fondo -->
+		<div class="imagen">
+			<img src="img/meson.jpeg" id="imgMeson" alt="meson"/>
+		</div>
+
+	<!-- Tipos de platos -->
+
+	  <div id="platos"
+	  	style="display:none;">
+
+			<ul>
+				<nav>
+
+					<li><a href="#" id="variado" onclick="changeImg()">Variado</a></li>
+					<li><a href="#" onclick="changeImg2()">Caracoles con All i Oli</a></li>
+					<li><a href="#" onclick="changeImg3()">Frito mallorquín</a></li>
+					<li><a href="#" onclick="#">Sopas Mallorquinas</a></li>
+					<li><a href="#" onclick="#">Tumbet</a></li>
+					<li><a href="#" onclick="#">Callos</a></li>
+					<li><a href="#" onclick="#">Pica-Pica</a></li>
+
+				</nav>
+			</ul>
+
+
+		</div>
+
+		<!-- Descripción plato -->
+
+		<div class="Entranteplato1" id="Entranteplato1"
+		 style="display:none;"> 
+			<article>
+				<h3>Variado</h3>
+					<span>
+
+						<p>
+
+							El variado "variat" mallorquin forma parte del tapeo típico de Mallorca.
+							Se suele servir en una cazuela de barro del tamaño que desees según el hambre que tengas.
+							Consiste en poner juntas diferentes tapas de las que te ofrezcan. El resultado es buenísimo, los sabores se mezclan entre sí y da gusto mojar pan.
+							Consiste en poner juntas diferentes tapas de las que te ofrezcan. Normalmente, calamares, croquetas , frito, pica-pica, ensaladilla rusa. El resultado es buenísimo, los sabores se mezclan entre sí y da gusto mojar pan.
+						</p>
+
+					</span>
+			</article>
+					<form method="post" action="consultabd.php">
+						<input type="hidden" name="tipoplato" value="variado">
+						<button type="submit">
+								Restaurantes
+						</button>
+					</form>
+
+		</div>
+		
+	<!-- Aquí conectamos con la bd y mostramos los resultados -->
+	
+	
+
+
+	<!-- Footer -->
+	 <footer id="main-footer">
+		<p>&copy; 2016 <a href="#">Gourmet Mallorca S.L.</a></p>
+	</footer> <!-- / #main-footer -->
+
+
+</body>
+</html>
